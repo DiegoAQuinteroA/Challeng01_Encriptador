@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="prinsipal">
+
+        <section class="info-entrada">
+
+            <header>
+                <img src="../imges/Logo.png" alt="logo alura" class="logo-alura">
+            </header>
+
+            <input type="text" name="entrada" class="texto-entrada" id="entrada">
+
+            <div class="info">
+                <img src="../imges/exclamation.png" width="15" height="15" alt="logo info" class="logo-info">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="btn-entrada">
+                <button class="btn" id="encriptar">Encriptar</button>
+                <button class="btn" id="desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="info-salida">
+            
+            <img src="../imges/Muñeco.png" alt="imagen de carga de salida" class="img-salida">
+            <div class="info-oculto" id="oculto">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p class="texto-oculto">ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            
+            <input type="text" name="salida" class="texto-salida" id="salida">
+            <input type="button" class="btn" id="copiar" value="Copiar">
+        </section>
+
+    </section>
+
+    <footer>
+        <p class="texto-footer">realizado por Diego Quintero</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
