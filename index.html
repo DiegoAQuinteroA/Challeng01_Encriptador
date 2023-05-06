@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
@@ -17,9 +17,8 @@
 
         <main>
             <section class="info-entrada">
+                <input type="text" name="entrada" class="texto-entrada" id="entrada"  placeholder="Escriba Aquí">
 
-                <input type="text" name="entrada" class="texto-entrada" id="entrada">
-    
                 <div class="info">
                     <img src="../imges/exclamation.png" width="15" height="15" alt="logo info" class="logo-info">
                     <p>Solo letras minusculas y sin acentos</p>
@@ -34,19 +33,21 @@
     
             <section class="info-salida">
                 
-                <img src="../imges/Muñeco.png" alt="imagen de carga de salida" class="img-salida">
+                <img src="../imges/Muñeco.png" alt="imagen de carga de salida" class="img-salida" id="img-salida">
                 <div class="info-oculto" id="oculto">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p class="texto-oculto">ingrese el texto que desees encriptar o desencriptar</p>
                 </div>
                 
                 <input type="text" name="salida" class="texto-salida" id="salida">
-                <input type="button" class="btn" id="copiar" value="Copiar">
+                <div class="btn-salida">
+                    <input type="button" class="btn" id="copiar" value="Copiar">
+                </div>
             </section>
         </main>
 
         <footer>
-            <p class="texto-footer">realizado por Diego Quintero</p>
+            <p class="texto-footer">&copy realizado por Diego Quintero</p>
         </footer>
     </section>
 

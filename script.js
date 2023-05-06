@@ -4,7 +4,7 @@ let btnDesencriptar = document.getElementById("desencriptar");
 let infoOculto = document.getElementById("oculto");
 let btnCopiar = document.getElementById("copiar");
 let textSalida = document.querySelector(".texto-salida");
-let imgSalida = document.getElementsByClassName(".img-salida");
+let imgSalida = document.getElementById("img-salida");
 
 function encriptar (){
     let texto = document.querySelector("#entrada").value;
@@ -20,7 +20,7 @@ function encriptar (){
     infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
     btnCopiar.style.display = 'block'; //mostrar boton copiar
     textSalida.style.display = 'block';
-    imgSalida.style.display = 'none'
+    imgSalida.style.display = 'none';
 }
 btnEncriptar.onclick = encriptar;
 
@@ -37,7 +37,7 @@ function desencriptar (){
     infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
     btnCopiar.style.display = 'block'; //mostrar boton copiar
     textSalida.style.display = 'block';
-    imgSalida.style.display = 'none'
+    imgSalida.style.display = 'none';
 }
 btnDesencriptar.onclick = desencriptar;
 
