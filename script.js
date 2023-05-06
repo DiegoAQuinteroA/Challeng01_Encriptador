@@ -8,36 +8,54 @@ let imgSalida = document.getElementById("img-salida");
 
 function encriptar (){
     let texto = document.querySelector("#entrada").value;
-    let textoCifrado = texto.replace(/e/gi, "enter")
-        .replace(/i/gi, "imes")
-        .replace(/a/gi, "ai")
-        .replace(/o/gi, "ober")
-        .replace(/u/gi, "ufat");
 
-    document.querySelector(".texto-salida").value = textoCifrado;
-    document.querySelector("#entrada").value;
+    if(texto){
+        let textoCifrado = texto.replace(/e/gi, "enter")
+            .replace(/i/gi, "imes")
+            .replace(/a/gi, "ai")
+            .replace(/o/gi, "ober")
+            .replace(/u/gi, "ufat");
 
-    infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
-    btnCopiar.style.display = 'block'; //mostrar boton copiar
-    textSalida.style.display = 'block';
-    imgSalida.style.display = 'none';
+        document.querySelector(".texto-salida").value = textoCifrado;
+        document.querySelector("#entrada").value;
+
+        infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
+        btnCopiar.style.display = 'block'; //mostrar boton copiar
+        textSalida.style.display = 'block';
+        imgSalida.style.display = 'none';
+    }else{
+        infoOculto.style.display = 'block'; //ocultar la información del recuadro de salida
+        btnCopiar.style.display = 'none'; //mostrar boton copiar
+        textSalida.style.display = 'none';
+        imgSalida.style.display = 'block';
+    }
+    
 }
 btnEncriptar.onclick = encriptar;
 
 function desencriptar (){ 
     let texto = document.querySelector("#entrada").value; 
-    let textoCifrado = texto.replace(/enter/gi, "e")
-        .replace(/imes/gi, "i")
-        .replace(/ai/gi, "a")
-        .replace(/ober/gi, "o")
-        .replace(/ufat/gi, "u"); 
-    document.querySelector(".texto-salida").value = textoCifrado;
-    document.querySelector("#entrada").value;
 
-    infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
-    btnCopiar.style.display = 'block'; //mostrar boton copiar
-    textSalida.style.display = 'block';
-    imgSalida.style.display = 'none';
+    if(texto){
+        let textoCifrado = texto.replace(/enter/gi, "e")
+            .replace(/imes/gi, "i")
+            .replace(/ai/gi, "a")
+            .replace(/ober/gi, "o")
+            .replace(/ufat/gi, "u"); 
+        document.querySelector(".texto-salida").value = textoCifrado;
+        document.querySelector("#entrada").value;
+
+        infoOculto.style.display = 'none'; //ocultar la información del recuadro de salida
+        btnCopiar.style.display = 'block'; //mostrar boton copiar
+        textSalida.style.display = 'block';
+        imgSalida.style.display = 'none';
+    }else{
+        infoOculto.style.display = 'block'; //ocultar la información del recuadro de salida
+        btnCopiar.style.display = 'none'; //mostrar boton copiar
+        textSalida.style.display = 'none';
+        imgSalida.style.display = 'block';
+    }
+    
 }
 btnDesencriptar.onclick = desencriptar;
 
