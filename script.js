@@ -8,7 +8,7 @@ let imgSalida = document.getElementById("img-salida");
 
 function encriptar (){
     let texto = document.querySelector("#entrada").value;
-
+    
     if(texto){
         let textoCifrado = texto.replace(/e/gi, "enter")
             .replace(/i/gi, "imes")
