@@ -45,8 +45,6 @@ header{
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    /* identical to box height, or 48px */
-    /* Dark blue/dark-blue-300 */
     color: #0A3871;
 
     background-color: #F3F5FC;
@@ -140,11 +138,12 @@ header{
 .info-oculto h1{
     font-size: 1.8em;
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 15px;
 }
 .info-oculto p{
     font-size: 17px;
     text-align: center;
+    margin-top: 15px;
 }
 .texto-salida{
     position: absolute;
